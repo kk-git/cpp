@@ -5,16 +5,31 @@ git config --global user.email "kkondepudi@gmail.com"
 
 git clone https://github.com/kkondepudi/cpp.git
 
-git add <file>            ..." to add file
+git add <file>               // to add file
 git add -A // for all files
-git rm <file>             ..." to delete file
-git checkout -- <file>    ..." to discard changes in working directory)
+git rm <file>                // to delete file
+git checkout -- <file>       // to discard changes in working directory)
 
 git status
+
+// to unstage
+git reset HEAD <file>
 
 git commit -m "my first cpp program on github"
 git push
 
 git pull
 
-git 
+Log of all commits
+	git log
+
+
+How can I see what I am about to push with git?
+	For a list of files to be pushed, run:
+	git diff --stat --cached [remote/branch]
+	example:
+	git diff --stat --cached origin/master
+	
+Remove a git commit which has not pushed
+	git log
+	git reset <id_from_log>
