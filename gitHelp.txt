@@ -5,23 +5,35 @@ git config --global user.email "kkondepudi@gmail.com"
 
 git clone https://github.com/kkondepudi/cpp.git
 
+// Do this after everyday morning to sync with git master
+git pull
+
+// Do this after every git add/commit/push
+git status
+
+------------------------------------------------------------------------------------
 git add <file>               // to add file
 git add -A // for all files
 git rm <file>                // to delete file
 git checkout -- <file>       // to discard changes in working directory)
 
-git status
-
 // to unstage
 git reset HEAD <file>
 
-git commit -m "my first cpp program on github"
-git push
-
-git pull
+------------------------------------------------------------------------------------
+git commit -m "comments go here"
 
 Log of all commits
 	git log
+
+// Remove a git commit which has not pushed
+git reset --hard origin/master    // to reset it to whatever the origin was at.
+
+------------------------------------------------------------------------------------
+
+git push
+
+------------------------------------------------------------------------------------
 
 
 How can I see what I am about to push with git?
